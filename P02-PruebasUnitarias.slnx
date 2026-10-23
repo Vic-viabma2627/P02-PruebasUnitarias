@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="P02-PruebasUnitarias/P02-PruebasUnitarias.csproj" />
+  <Project Path="P02PruebasUnitariasTests/P02PruebasUnitariasTests.csproj" />
+</Solution>
