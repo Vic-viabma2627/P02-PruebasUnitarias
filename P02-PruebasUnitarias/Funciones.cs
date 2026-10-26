@@ -8,7 +8,24 @@ namespace P02_PruebasUnitarias
     {
         public static long CalcularFactorial(int n)
         {
-            throw new System.NotImplementedException();
+            if (n < 0)
+            {
+                return -1;
+            }
+
+            if (n == 0)
+            {
+                return 1;
+            }
+
+            long factorial = 1;
+
+            for (int i = 1; i <= n; i++)
+            {
+                factorial *= i;
+            }
+
+            return factorial;
         }
     }
 }
