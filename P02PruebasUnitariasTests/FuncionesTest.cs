@@ -15,5 +15,16 @@ namespace P02PruebasUnitariasTests
         {
             Assert.AreEqual(esperado, Funciones.CalcularFactorial(n));
         }
+
+        [TestMethod]
+        [DataRow(null, false)]
+        [DataRow("", false)]
+        [DataRow("abc#123", false)]
+        [DataRow("abcdefgh", false)]
+        [DataRow("abc#1234", true)]
+        public void EsContrasenyaValida_DevuelveResultadoEsperado(string? contrasenya, bool esperado)
+        {
+            Assert.AreEqual(esperado, Funciones.EsContrasenyaValida(contrasenya));
+        }
     }
 }

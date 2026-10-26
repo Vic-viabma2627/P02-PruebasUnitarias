@@ -22,5 +22,9 @@ namespace P02_PruebasUnitarias
 
             return factorial;
         }
+        public static bool EsContrasenyaValida(string? contrasenya)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
