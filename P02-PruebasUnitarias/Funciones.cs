@@ -24,7 +24,9 @@ namespace P02_PruebasUnitarias
         }
         public static bool EsContrasenyaValida(string? contrasenya)
         {
-            throw new System.NotImplementedException();
+            return !string.IsNullOrEmpty(contrasenya)
+            && contrasenya.Length >= 8
+            && contrasenya.Contains('#');
         }
     }
 }
